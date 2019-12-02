@@ -1,0 +1,81 @@
+.parent {
+    width: 100%;
+    display: flex;
+    padding-top: 3em;
+}
+
+.container {
+    float: right;
+    width: 350px;
+    overflow: hidden;
+    position: relative;
+    border: solid 1px black;
+    margin-right: 3em;
+}
+
+.container:hover {
+    transform: scale(1.1);
+}
+
+img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+#menutrigger:hover p {
+    opacity: 1;
+}
+
+p {
+    opacity: 0;
+    transition: opacity .5s ease;
+    position: absolute;
+    color: white;
+    bottom: 0;
+    left: 15px;
+}
+
+.menu {
+    position: relative;
+    background-color: #0002;
+}
+
+.menu ul {
+    display: none;
+    position: absolute;
+    top: 4em;
+    left: 0;
+}
+
+.menu ul:before {
+    content: "";
+    background-color: #0002;
+    height: 3em;
+    width: 100%;
+    position: absolute;
+    top: -3em;
+    left: 0;
+}
+
+.menu:hover ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu:hover ul li {
+    justify-content: space-evenly;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
